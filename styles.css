@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px 0;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+/* Navbar List */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar Items */
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Navbar Links */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Scroll Effect */
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.navbar.scrolled ul li a {
+    color: #fff;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sections for Spacing */
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Different Backgrounds for Sections */
+#home { background: #ff5733; }
+#about { background: #33aaff; }
+#services { background: #33cc33; }
+#contact { background: #aa33ff; }
