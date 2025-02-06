@@ -1,7 +1,7 @@
-# RESPONSIVE LANDING PAGE
+# Interactive Navigation Menu
 
 # Overview:
-This project is an **RESPONSIVE LANDING PAGE** with the following features:
+This project is an **Interactive Navigation Menu** with the following features:
 - Fixed navigation bar that remains visible on all pages.
 - Color and style changes on hover.
 - Background and text color transition when scrolling.
